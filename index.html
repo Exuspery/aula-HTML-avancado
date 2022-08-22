@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avançado</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>aula tag picture</h1>
+
+    <picture>
+        <source srcset="images/desktop.jpg" width="400px" media="(min-width:768px)">
+        <source srcset="images/tablet.jpg" media="(min-width:475px)">
+        <img src="images/celular.jpg" alt="montanhas com lago">
+    </picture>
+    <p>a imagem foi diminuída para que ficasse melhor para ver</p>
+
+    <h1>favicon</h1>
+
+    linkar usando link:favicon e colocar a imagem ta pasta images, feito isso irá aparecer o ícone lá em cima
+
+   
+    <h1>caracteres e emojis</h1>
+
+    <a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank">https://www.w3schools.com/charsets/ref_emoji.asp</a>
+    <br>
+
+    <a href="http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html" target="_blank">http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html</a>
+
+    <h1>aula de audio</h1>
+
+    <!-- <audio src="./audios/audio.mp3" controls></audio> -->
+
+    <audio controls>
+        <source src="audios/audio.mp3" type="audio/mpeg">
+        <source src="audios/audio.ogg" type="audio/ogg">
+        <source src="audios/audio.wav" type="audio/wav">
+        <p>Seu navegador não tem suporte a tag audio</p>
+    </audio>
+
+    <p>Conversor de audio de mp3 para ogg ou wav <a href="https://convertio.co/pt/" target="_blank">https://convertio.co/pt/</a></p>
+
+    <h1>aula de video</h1>
+    <!-- <video src="videos/video.mp4" width="400"  controls muted loop poster="images/thumb.jpg"></video> -->
+
+    <video  autoplay muted controls width="300" poster="/images/thumb.jpg">
+        <source src="/videos/video.mp4" type="video/mp4">
+        <source src="/videos/video.ogg" type="video/ogg">
+        <source src="/videos/video.webm" type="video/webm">
+        <p>Esse navegador nao tem suporte a tag video</p>
+    </video>
+    
+    <p> sites para pegar imagens/videos sem copyright <a href="https://www.storyblocks.com/video" target="_blank">Storyblocks</a> <a href="https://www.pexels.com/pt-br/" target="pexels">Pexels</a></p>
+    <p>site para converter videos de mp4 para ogg ou outros <a href="https://convertio.co/pt/" target="_blank">Convertio</a></p>
+
+    <h1>Aula de Iframe</h1>
+    
+    <iframe src="sobre.html" width="300px"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wyVQDjmmMlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
